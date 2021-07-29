@@ -38,7 +38,7 @@ resource "aws_route_table_association" "private-subnet-1-assoc" {
 }
 
 # Associate private route table for NAT Gateway 1 with private subnet 2
-resource "aws_route_table_association" "private-subnet-1-assoc" {
+resource "aws_route_table_association" "private-subnet-2-assoc" {
   subnet_id      = aws_subnet.private-subnet-2.id
   route_table_id = aws_route_table.private-route-table-for-nat-gateway-1.id
 }
