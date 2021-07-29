@@ -34,13 +34,20 @@ variable "availability-zone" {
 # Variable for public subnet 1 CIDR block
 variable "public-subnet-1-cidr" {
   default     = "10.0.0.0/24"
-  description = "Public Subnet CIDR Block"
+  description = "Public Subnet 1 CIDR Block"
   type        = string
 }
 
 # Variable for private subnet 1 CIDR block
 variable "private-subnet-1-cidr" {
   default     = "10.0.1.0/24"
-  description = "Private Subnet CIDR Block"
+  description = "Private Subnet 1 CIDR Block"
+  type        = string
+}
+
+# Variable for private subnet 2 CIDR block
+variable "private-subnet-2-cidr" {
+  default     = "10.0.2.0/24"
+  description = "Private Subnet 2 CIDR Block"
   type        = string
 }

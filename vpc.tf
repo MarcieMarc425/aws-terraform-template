@@ -61,3 +61,15 @@ resource "aws_subnet" "private-subnet-1" {
     Name = "Private Subnet 1"
   }
 }
+
+# Create private subnet 2
+resource "aws_subnet" "private-subnet-2" {
+  vpc_id                  = aws_vpc.vpc.id
+  cidr_block              = var.private-subnet-2-cidr
+  availability_zone       = var.availability-zone
+  map_public_ip_on_launch = false
+
+  tags = {
+    Name = "Private Subnet 2"
+  }
+}
