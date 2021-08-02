@@ -10,6 +10,24 @@ variable "aws_secret_access_key" {
   sensitive   = true
 }
 
+# Variable for master DB name
+variable "master_db_name" {
+  description = "Master DB name"
+  sensitive   = true
+}
+
+# Variable for master DB username
+variable "master_db_username" {
+  description = "Master DB username"
+  sensitive   = true
+}
+
+# Variable for master DB password
+variable "master_db_password" {
+  description = "Master DB password"
+  sensitive   = true
+}
+
 #Variable for AWS region
 variable "aws_region" {
   description = "AWS region"
