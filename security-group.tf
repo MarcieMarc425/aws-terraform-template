@@ -59,8 +59,8 @@ resource "aws_security_group" "bastion-security-group" {
 }
 
 # Create security group for web server
-resource "aws_security_group" "web-security-group" {
-  name        = "Web Security Group"
+resource "aws_security_group" "web-server-security-group" {
+  name        = "Web Server Security Group"
   description = "Enable HTTP/HTTPS access on Port 80/443"
   vpc_id      = aws_vpc.vpc.id
 
